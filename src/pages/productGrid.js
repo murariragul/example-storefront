@@ -53,7 +53,7 @@ class ProductGridPage extends Component {
   }
 
   @trackProductListViewed()
-  trackEvent() {}
+  trackEvent() { }
 
   setPageSize = (pageSize) => {
     this.props.routingStore.setSearch({ limit: pageSize });
@@ -94,7 +94,7 @@ class ProductGridPage extends Component {
         />
         <ProductGrid
           catalogItems={catalogItems}
-          currencyCode={(shop && shop.currency && shop.currency.code) || "USD"}
+          currencyCode={(shop && shop.currency && shop.currency.code) || "INR"}
           initialSize={initialGridSize}
           isLoadingCatalogItems={isLoadingCatalogItems}
           pageInfo={catalogItemsPageInfo}
